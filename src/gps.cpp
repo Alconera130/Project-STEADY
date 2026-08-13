@@ -121,8 +121,6 @@ void gpsBegin() {
 
     gpsCharacteristic->setCallbacks(new GPSCallbacks());
 
-    service->start();
-
     NimBLEAdvertising *advertising = NimBLEDevice::getAdvertising();
 
     advertising->addServiceUUID(BLE_SERVICE_UUID);
